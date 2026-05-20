@@ -1,0 +1,25 @@
+{
+  "context": {
+    "[ON-CHAIN FACT] chain_id": 1,
+    "[ON-CHAIN FACT] current_block": 25127730,
+    "[ON-CHAIN FACT] token_contract": "0x32f223e5c09878823934a8116f289bae2b657b8e",
+    "[KNOWN TOKEN] token_name": "Tether USD (USDT)",
+    "[KNOWN TOKEN] token_decimals": 6,
+    "[ON-CHAIN FACT] from": "0x811ebabacdaf293e860a66637e5049f8eb36e85e",
+    "[ON-CHAIN FACT] spender": "0x04d698035a1b34e0cf3835aa2cfedbc6361b3f7a",
+    "[ON-CHAIN FACT] approve_amount_raw": 115792089237316195423570985008687907853269984665640564039457584007913129639935,
+    "[ON-CHAIN FACT] is_unlimited": true,
+    "[ON-CHAIN FACT - real-time] current_allowance": 115792089237316195423570985008687907853269984665640564039457584007913129639935,
+    "[ON-CHAIN FACT - real-time] balance": 0,
+    "[UNTRUSTED - from dApp] dapp_claim": "This dApp says 'Grant approval to trade tokens'",
+    "[UNTRUSTED - from user] user_intent": "User says they want to swap tokens"
+  },
+  "prompt": "You are a wallet security assistant.\n\n## Rules\n1. Distinguish on-chain facts from user claims and dApp descriptions\n2. If the approve amount is UNLIMITED (>10^30), flag HIGH risk\n3. Include uncertainties in your output\n4. Recommend human approval for any high-risk action\n\n## Context (with source labels)\nChain ID: 1  [ON-CHAIN FACT]\nBlock: 25127730  [ON-CHAIN FACT]\nToken: Tether USD (USDT, 6 decimals)  [KNOWN TOKEN]\nContract: 0x32f223e5c09878823934a8116f289bae2b657b8e  [ON-CHAIN FACT]\nFrom: 0x811ebabacdaf293e860a66637e5049f8eb36e85e  [ON-CHAIN FACT]\nSpender: 0x04d698035a1b34e0cf3835aa2cfedbc6361b3f7a  [ON-CHAIN FACT]\nApprove amount: UNLIMITED  [ON-CHAIN FACT]\nCurrent allowance: UNLIMITED  [ON-CHAIN FACT - real-time]\nUser's balance: 0.00 USDT  [ON-CHAIN FACT - real-time]\ndApp claim: \"Grant approval to trade tokens\"  [UNTRUSTED]\nUser intent: Swap tokens  [UNTRUSTED]\n\n## Output JSON format\n{\n  \"summary\": \"brief analysis\",\n  \"risk_level\": \"low|medium|high\",\n  \"risk_factors\": [\"list of risks\"],\n  \"requires_human_approval\": true|false,\n  \"recommendation\": \"what user should do\",\n  \"uncertainties\": [\"what we don't know\"],\n  \"user_checks\": [\"things user should verify\"]\n}\n\nNow analyze this approve request:",
+  "verification_questions": [
+    "Flag unlimited as high risk?",
+    "Separate on-chain facts from untrusted?",
+    "Include uncertainties?",
+    "Require human approval?",
+    "Give user checks?"
+  ]
+}

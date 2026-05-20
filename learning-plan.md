@@ -8,57 +8,52 @@
 - 每日可投入：2h+
 - 语言偏好：中英混合
 
-## 阶段一：HandBook 基础阅读（Day 1-3）
+## 阶段一：基础 + 模块 C 实验（Day 1-4）
 
-目标：完成 Week 1 模块 A/B/C 的 Handbook 阅读，建立 AI + Web3 基础概念体系
+目标：完成 Week 1 模块 A/B/C 的全部 Handbook 阅读与实操
 
-### 已完成 (Day 1 — 2026-05-19) ✅
+### Day 0 (2026-05-19) — 预热 ✅
 - [x] LLM（大语言模型）
 - [x] Prompt（提示词）
 - [x] Context（上下文）
 - [x] 练习：交易解码器、Context Spec、Prompt 优化
 
-### Day 2 (2026-05-20)
-**AI 基础剩余章节：**
+### Day 1 (2026-05-20) — AI 基础收尾 + Web3 入门 + 钱包实操 🔥
+**前半段（概念）：**
 - [ ] RAG（检索增强生成）
 - [ ] Agent（智能体）
-- [ ] Framework（框架）
-- [ ] Vibe Coding（氛围编程）
-- [ ] MCP（模型上下文协议）
 
-**建议练习：** 每次读完一章后，让我做一个小 demo 演示
+**后半段（实操）：**
+- [ ] Network（网络基础）
+- [ ] Cryptography（密码学基础）
+- [ ] Wallet（钱包）
+- [ ] 🔥 **装 MetaMask → 领 Sepolia 测试币 → 发一笔测试网交易 → Etherscan 查看**
 
-### Day 3 (2026-05-21) — Web3 基础
-**上午：**
-- [ ] Network（网络 — 区块、共识、L2、RPC）
-- [ ] Cryptography（密码学 — 哈希、公私钥、签名）
-- [ ] Wallet（钱包 — 身份和签名入口）
-
-**下午/晚上：**
+### Day 2 (2026-05-21) — Web3 合约 + 部署实操 🛠️
 - [ ] Smart Contract（智能合约）
 - [ ] Account Abstraction（账户抽象）
-- [ ] DeFi（开放金融协议）
+- [ ] DeFi（开放金融协议）- 可选快速过
+- [ ] 🔥 **用 Remix 写合约 → 部署到测试网 → Etherscan 验证**
 
-**练习：** 实际连一次 MetaMask，发一笔测试网交易
-
-## 阶段二：Bridge + 前沿（Day 4-5）
-
-目标：Week 1 进阶任务
-
-### Day 4 (2026-05-22)
-- [ ] Chain-aware Context（链上状态如何进入 Agent 上下文）
+### Day 3 (2026-05-22) — 模块 C 完整交叉实验 🎯
+- [ ] Chain-aware Context（链上状态进入 Agent 上下文）
 - [ ] Web3 Tool Use（RPC、钱包、合约工具调用）
-- [ ] Agent Workflow（哪些步骤自动化，哪些需要 human-in-the-loop）
-- [ ] Agent Wallet（Agent 权限管理）
+- [ ] 🔥 **AI 生成 → 人工复核 → 钱包确认 → 链上执行 → 浏览器验证** 完整链路
+- [ ] 🔥 **整理模块 C 交付物**
 
-### Day 5 (2026-05-23)
-- [ ] Machine Payment（机器间小额支付）
-- [ ] Settlement & Escrow（结算与争议处理）
-- [ ] Agent Identity & Trust（Agent 身份与声誉）
-- [ ] Verifiable AI & Security（可验证 AI 与安全）
+### Day 4 (2026-05-23) — 余量 / 补漏
+如果需要更多时间，这一天用来补 Day 1-3 没完成的部分
 
-## 阶段三：Hackathon 准备（Day 6+）
+## 阶段二：高阶轨道（Day 5-6）
 
-- [ ] 选择一个前沿探索方向
-- [ ] 确定 Hackathon 项目想法
-- [ ] 开始搭建项目原型
+### A. Agent Workflow + ETH Skills
+- [ ] agent 系统与 skills 的关系
+- [ ] workflow 与 agent 的差异
+- [ ] 可观测性、日志、回滚策略、人工确认
+- [ ] 🔥 比较"纯提示词 vs workflow vs agent+skills"三种方式
+- [ ] 🔥 设计一个 ETH skill
+
+### E. 最小交叉实验升级
+- [ ] 把模块 C 实验标出日志、失败点、回滚策略
+- [ ] 比较"纯人工 vs AI辅助 vs 自动化"差异
+- [ ] 整理全部交付物提交到 repo
